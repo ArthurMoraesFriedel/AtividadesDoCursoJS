@@ -1,0 +1,42 @@
+Formatação de Strings
+
+	Converter para String(n)
+	n.toString()
+	Converter para número Number(n)
+
+	Interpolar variavel dentro de ´´, PlaceHolder ${n}
+	.length //quantos caracteres a strin tem
+	.toUpperCase() //Tudo para "Maiúsculas"
+	.toLowerCase() //Tudo para "Minúsculas"
+
+Formatação de números
+	.toFixed(2)
+	.toFixed(2).replace('.', ',') //Converte para duas casas decimais e troca . por ,
+	.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //Converte para valor monetário
+	.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+	.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+
+Tipos primitivos de variaveis
+
+	number - Java não tem prioridade sobre número inteiro então todo número recebe variavel number
+
+		Converter para número Number(n)
+
+	string - cadeia de caracteres, recebe um valor que pode ter apenas letras ou números diferente do number pelo fato que aqui pode conter - . ,
+
+		Converter para String(n)
+		n.toString()
+
+	boolean - true false
+
+
+Ainda não pesquisado
+---
+
+null
+
+undefined
+
+object
+
+function

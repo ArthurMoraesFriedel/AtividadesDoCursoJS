@@ -1,0 +1,4 @@
+Windows
+	.alert('emite msg')
+	.prompt('emite uma pergunta')
+	.confirm('Emite uma confirmação')

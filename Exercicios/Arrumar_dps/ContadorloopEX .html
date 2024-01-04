@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conteAte10</title>
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+            height: 200px;
+            font: normal Arial 32px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><strong>Contador</strong></h1>
+    <p>Quer contar até quanto?</p>
+    <p>APARTIR D <input type="number" name="ApartirDesseHTML" id="ApartirDesseHTML" > ATÉ <input type="number" name="ultimo_nHTML" id="ultimo_nHTML"></p>
+    <p>Quanto será o salto?</p>
+    <p>DE <input type="number" name="SaltoHTML" id="SaltoHTML" >
+    <p><input type="button" value="Iniciar a contagem" onclick="Contar()"></p>
+    <div id="edit"></div>
+
+    <script>
+        function Contar(){
+            var convertApartirDesse = window.document.getElementById('ApartirDesseHTML')
+            var convertUlt = window.document.getElementById('ultimo_nHTML')
+            var convertSalt = window.document.getElementById('SaltoHTML')
+            var edit = window.document.querySelector('div#edit')
+
+            var ApartirDesse = Number(convertApartirDesse.value)
+            var ultimo_n = Number(convertUlt.value)
+            var salto = Number(convertSalt.value)
+
+            var contador = ApartirDesse
+            var maior_numero
+            var SomaTotal = 0
+    
+            if (contador< ultimo_n) {
+                while(contador < ultimo_n){
+                    contador = contador + salto
+                    edit.innerHTML += `<p>${contador}</p>`
+
+                    SomaTotal = SomaTotal + contador
+                }
+            } else if (contador>ultimo_n){
+                while(contador > ultimo_n){
+                    contador = contador - salto
+                    edit.innerHTML += `<p>${contador}</p>`
+
+                    SomaTotal = SomaTotal + contador
+                }
+            }
+            edit.innerHTML += `<p><strong>Soma de todos os valores é ${SomaTotal}</strong></p>`
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+Ternário
+
+teste ? verdadeiro : falso
+
+
+var media = 5.5
+
+media > 7 ? 'Aprovado' : 'Reprovado'
+
+
+
+
+Aritmeticos> Atribuição> Logicos

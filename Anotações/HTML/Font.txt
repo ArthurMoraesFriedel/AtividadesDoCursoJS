@@ -1,0 +1,2 @@
+Deixar em negrito
+	<strong><strong>

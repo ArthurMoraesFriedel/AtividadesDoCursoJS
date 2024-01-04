@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem eu sou?</title>
+</head>
+<body>
+    <h1> De que país você ?</h1>
+    <p><input type="text" name="Txt_N" id="Txt_N"></p>
+    <p><input type="button" value="Resultado" onclick="Calcular()" ></p>
+    <div id="res"></div>
+<script>
+    function Calcular(){
+        var Txt_P = window.document.getElementById('Txt_N')
+        var res = window.document.getElementById('res')
+        var pais = String(Txt_P.value)
+            if (pais == 'Brasil'){
+                res.innerHTML= `Você é Brasileiro`
+            } else {
+                res.innerHTML= `Você é estrageiro`
+            }
+
+    }  
+
+
+
+
+</script>
+</body>
+</html>

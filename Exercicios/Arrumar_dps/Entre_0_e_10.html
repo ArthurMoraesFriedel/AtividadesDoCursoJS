@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre_0_e_10</title>
+</head>
+<body>
+    <script>
+    var limite = Number(window.prompt('Quantas vezes vamos repetir?'))
+    contador = 0
+    var n = limite*0 + 1
+    var cont_Impar = 0
+    var soma_impares = 0
+
+    
+        for (var i = 0; i < limite; i++, n++){
+            var Numero = Number(window.prompt(n +'° Valor '))
+                if(Numero>0 && Numero<10){
+                    contador++
+                    if(Numero % 2 != 0){
+                        cont_Impar++
+                        soma_impares = soma_impares + Numero
+                    }
+                }
+        }
+    window.alert("Total de números entre 0 e 10 é " + contador)
+    window.alert("Total de números entre 0 e 10 que são ímpares é " + cont_Impar + " Somando-os o resultado é " + soma_impares)
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciandos estudos de Dom</title>
+    <style>
+        body {
+            background: rgb(31, 71, 158);
+            color: white;
+            font: normal 18pt Arial;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1><strong>Primeiros passos com DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Java Script</p>
+    <div id= "msg">Clique em min</div>
+
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+            //Por ser um metodo no plural usa-se [] para definir qual 
+
+        /*
+        var d = window.document.getElementById('msg')
+        d.innerText = 'Estou aguardando'
+        d.style.background = 'green'
+        */
+
+        //document.write(p1.innerHTML)
+            //Diferença entre .innerHTML e TEXT, é que o html puxa formatação do html e o outro apenas texto.
+            //No getElementsByTagName('p')[1], ele puxa somente o elemento html <p>, é somente com, inner.html que é infomado o texto.
+
+        var d = window.document.querySelector('div#msg') //Primeiro o lugar, em seguida o tipo, por fim o id)
+        d.style.color = 'blue'
+        d.style.background = 'white'
+    </script>
+
+</body>
+</html>
