@@ -1,4 +1,10 @@
-//Soma dos valores, Média dos valores, quantos divisivéis por 5, quantos são nulos, soma dos pares
+/*Objetivo obter:
+- Soma dos valores
+- Média dos valores
+- Quantos divisivéis por 5
+- Quantos são nulos
+- Qual a soma dos pares
+*/
 function Calcular() {
     //Variaveis
     var Nulos = 0
