@@ -1,4 +1,4 @@
-/*Objetivo obter:
+    /*Objetivo obter:
 - Soma dos valores
 - Média dos valores
 - Quantos divisivéis por 5

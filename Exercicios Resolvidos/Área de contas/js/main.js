@@ -1,3 +1,4 @@
+//Calcula a Tabuada do número escolhido
 function Calcular() {
 
     var convertTabuada_desse = window.document.getElementById('Tabuada_desse_HTML')
@@ -19,7 +20,7 @@ function Calcular() {
     }
 
 }
-
+//Executa conta de fatorial
 function VerificarFT(){
     var convertFatorial_desse = window.document.getElementById('Fatorial_desse_HTML')
     var editar_fatorial = window.document.querySelector('div#editar_fatorial')
@@ -43,7 +44,7 @@ function VerificarFT(){
 
 
 }
-
+//Verificar se o número é primo
 function VerificarPrimo(){
     var convertN_desse = window.document.getElementById('N_desse_HTML')
     var editar_primo = window.document.querySelector('div#editar_primo')
