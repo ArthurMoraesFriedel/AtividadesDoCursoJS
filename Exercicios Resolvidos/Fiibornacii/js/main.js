@@ -1,23 +1,30 @@
-function Calcular() {
+//Adição da tecla enter em eventos
+document.getElementById("Termo_final").addEventListener("keyup", function(Event) {
+    if (Event.key === "Enter") {
+        Fibonacci();
+    }
+})
+function Fibonacci() {
 
-    var convertUltimo_Numero_html = window.document.getElementById('Ultimo_Numero_html')
-    var editar_aqui = window.document.querySelector('div#editar_aqui')
+    // Obtém o valor do input
+    let Termo_final = document.getElementById("Termo_final").value
 
-    var Ultimo_Numero = Number(convertUltimo_Numero_html.value)
+    // Converte a entrada para um número
+    Termo_final = parseFloat(Termo_final);
 
     // fibonacci = Antecessor + atual valor
 
-    var Valor_antigo = 0
-    editar_aqui.innerHTML += `${Valor_antigo} `
+    let T0 = 0
+    Res.innerHTML = `${T0} `
 
-    var Valor_atual = 1
-    editar_aqui.innerHTML += `${Valor_atual} `
+    let T1 = 1
+    Res.innerHTML += `${T1} `
 
-    for (var i = 2; i < Ultimo_Numero; i++){
-        var fibonacci = Valor_antigo + Valor_atual
-        editar_aqui.innerHTML += `${fibonacci} `
+    for (var i = 2; i < Termo_final; i++){
+        let T3 = T0 + T1
+        Res.innerHTML += `${T3} `
 
-        Valor_antigo = Valor_atual
-        Valor_atual = fibonacci
+        T0 = T1
+        T1 = T3
     }
 }
