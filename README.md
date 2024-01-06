@@ -1,9 +1,10 @@
 # Curso-de-JS-HTML-CSS
 ---
 Este repositório serve para armazenar as atividades e aprendizados realizadas no curso de **Javascript**, **HTML** e **CSS**  do Gustavo Guanabara.
+
 ## Objetivo:
----
 Aprender a dominar as tecnologias afim de aprofundar meus conhecimentos.
+
 ---
 ### Para mais informações:
 
