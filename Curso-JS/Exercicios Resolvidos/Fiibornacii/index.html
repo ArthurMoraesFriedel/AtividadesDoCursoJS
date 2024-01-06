@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Par ou ímpar</title>
+
+    <title>FiiBonacci</title>
 </head>
 <body>
-    <h1>Número é par ou ímpar?</h1>
-    <p>Digite um número</p>
-    <p><input type="number" value="N1" id="N1"></p>
-    <p><input type="button" value="Verificar" onclick="Par_ou_impar()" tabindex="0"></p>
+    <h1><strong>FiiBonacci</strong></h1>
+    <p>Quer contar até qual termo?</p>
+    <input type="number" name="Termo_final" id="Termo_final" min="0">
+    <p><input type="button" value="Verificar" onclick="Fibonacci()"></p>
     <div id="Res"></div>
 
     <script src="./js/main.js"></script>
+
 </body>
 </html>
