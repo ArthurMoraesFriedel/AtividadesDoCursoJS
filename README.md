@@ -1,6 +1,6 @@
 # Curso-de-JS-HTML-CSS
 ---
-Este repositório serve para armazenar as atividades e aprendizados realizadas no curso de **Javascript** do Gustavo Guanabara.
+Este repositório serve para armazenar as atividades e aprendizados realizadas no curso de **Javascript**, **HTML** e **CSS**  do Gustavo Guanabara.
 ## Conteudo Aprendido 
 - [x] Comando de Entrada e Operadores
 - [x] Operadores Logicos e Relacionais
