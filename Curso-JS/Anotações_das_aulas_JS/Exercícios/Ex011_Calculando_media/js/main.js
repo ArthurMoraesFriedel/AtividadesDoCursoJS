@@ -1,26 +1,16 @@
-//Adição da tecla enter em eventos
-document.getElementById("Termo_final").addEventListener("keyup", function(Event) {
-    if (Event.key === "Enter") {
-        Fibonacci();
-    }
-})
 function Media() {
     //Vai perguntar o nome
     var nome = window.prompt('Qual seu nome?')//Vai perguntar o nome
     //Primeiro número
-    var n1 = window.prompt('Qual foi sua primeira nota?')
+    var n1 = Number.parseFloat(window.prompt('Qual foi sua primeira nota?'))
     //Segundo número
-    var n2 = window.prompt('Além dessa, qual foi sua segunda nota')
-
-    // Converte a entrada para um número
-    n1 = parseFloat(n1)
-    n2 = parseFloat(n2)
+    var n2 = Number.parseFloat(window.prompt('Além dessa, qual foi sua segunda nota'))
 
     //Calcula média
     var media = (n1 + n2)/2
 
     //Aprovado ou reprovado
-    if(7>=media){
+    if(media=>7){
         var Res = "Meus Parabéns"
     } else{
         var Res = "Estude um pouco mais!"
