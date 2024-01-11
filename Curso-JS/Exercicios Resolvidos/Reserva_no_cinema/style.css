@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    position: absolute;
+    top: 10%;
+    height: 0%; /* Ajuste conforme necessário */
+    width: 100%; /* Garante que o título ocupe 100% da largura do body */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saida{
+    margin: 5%;
+    padding: 5%;
+    position: relative;
+    bottom: -40%;
+}
+* {
+    margin: 5%;
+    padding: 10%;
+    justify-content: center;
+}
+
+.LinhaB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Acentos{
+    background-color: rgb(106, 106, 224);
+    color: #f7f7f7;
+}
+
+.Acentos:active{
+    background-color: orange;
+}
+.Acentos.reservado {
+    background-color: red;
+}
