@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('saida').innerHTML = `O acento B`+ assentoId + ` já foi reservado`
             }else{
                 // Pode ser reservado
-                document.getElementById('saida').innerHTML = 'Deseja reservar o assento ' + assentoId + '? <button onclick="confirmarReserva(\'' + assentoId + '\')">Sim</button>/<button onclick="cancelarReserva()">Não</button>';
+                document.getElementById('saida').innerHTML = 'Deseja reservar o assento ' + assentoId + '? <p><button onclick="confirmarReserva(\'' + assentoId + '\')">Sim</button>/<button onclick="cancelarReserva()">Não</button>';
             }
 
         });

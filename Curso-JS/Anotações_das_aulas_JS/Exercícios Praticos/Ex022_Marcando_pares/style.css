@@ -16,3 +16,11 @@ button {
     border-radius: 50px;
     justify-content: center;
 }
+section{
+    margin: auto;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
