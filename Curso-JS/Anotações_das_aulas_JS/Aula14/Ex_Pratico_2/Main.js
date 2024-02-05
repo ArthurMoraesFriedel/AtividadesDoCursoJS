@@ -1,10 +1,11 @@
 function Tabuada(){
-    // Obter o número digitado pelo usuário
+
+  // Obter o número digitado pelo usuário
     var N1 = Number(window.document.getElementById("N1").value)
 
-    if(N1==NaN){
+    if(N1==''){
       window.alert("Insira um valor válido")
-      break
+      return
     }
 
     // Referência à lista no HTML
