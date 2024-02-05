@@ -8,19 +8,18 @@
 </head>
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div>
-            Início: <input type="number" id="n1"><p>
-            Fim:    <input type="number" id="n2"><p>
-            Passo:  <input type="number" id="Passo"></p>
-            <button type="button" onclick="Contar()">contar</button>
-        </div>
+        <form id="TabuadaForm">
+            <label for="N1">Informe um número: </label>
+            <input type="number" value="N1" id="N1" required>
+            <p><button type="button" onclick="Tabuada()">Calcular</button></p>
+        </form>
 
-        <div id="res">
-            
-        </div>
+        <!-- Lista dinâmica para exibir os resultados -->
+        <ul id="tabuadaLista"></ul>
+        
     </section>
     <footer>
         <p>&copy;CursoemVideo</p>
