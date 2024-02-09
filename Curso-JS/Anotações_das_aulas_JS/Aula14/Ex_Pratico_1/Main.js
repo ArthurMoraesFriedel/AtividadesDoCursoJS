@@ -4,11 +4,12 @@ function Contar(){
   let Passo = Number(window.document.getElementById('Passo').value)
   let res = window.document.querySelector('div#res')
 
-  if(n1 == ' '){
+  if(n1 == ' ' || n2 == ' '){
     window.alert("Preencha os dados adequadamente")
+    res.innerHTML = `Impossível contar`
     return
-  }else if(Passo == ''){
-    window.alert("Valor do Passo não foi preenchido, será considerado valor de 1")
+  }else if(Passo == '' || Passo == 0){
+    window.alert("Valor do Passo não foi preenchido ou é inválido, será considerado valor de 1")
     Passo = 1
     Contando(n1, n2, Passo, res)
   }else{

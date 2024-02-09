@@ -11,14 +11,16 @@
         <h1>Tabuada</h1>
     </header>
     <section>
-        <form id="TabuadaForm">
+        <div>
             <label for="N1">Informe um número: </label>
             <input type="number" value="N1" id="N1" required>
-            <p><button type="button" onclick="Tabuada()">Calcular</button></p>
-        </form>
-
-        <!-- Lista dinâmica para exibir os resultados -->
-        <ul id="tabuadaLista"></ul>
+            <button type="button" onclick="Tabuada()">Calcular tabuada</button></p>
+        </div>
+        <div>
+            <select name="Tab" id="Tab" size="10">
+                <option>Insira um valor acima</option>
+            </select>
+        </div>
         
     </section>
     <footer>

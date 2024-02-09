@@ -3,24 +3,30 @@ function Tabuada(){
   // Obter o número digitado pelo usuário
     var N1 = Number(window.document.getElementById("N1").value)
 
-    if(N1==''){
-      window.alert("Insira um valor válido")
+  // Referência à lista no HTML e limpar a lista
+    var Tab = document.getElementById('Tab')
+
+  //Verificar se o valor digitado é valido
+    if(N1=='null'){
+      window.alert("Por favor insira um número")
       return
+    }else{
+      Calculo(N1, Tab)
     }
+}
 
-    // Referência à lista no HTML
-    var tabuadaLista = document.getElementById("tabuadaLista")
+function Calculo(N1, Tab){
+  
+  //Limpar conteúdo
+  Tab.innerHTML = ``
 
-    // Limpar a lista antes de adicionar novos itens
-    tabuadaLista.innerHTML = ' '
+  for(var i = 1; i <=10; i++){
 
-  // Loop para calcular a tabuada e adicionar à lista
-    for(var i=1; i<=10;i++){
-        var resultado = N1 * i
-
-        // Criar um item de lista e adicionar ao HTML
-        var li = document.createElement("li")
-        li.appendChild(document.createTextNode(N1 + "x" + i + "=" + resultado))
-        tabuadaLista.appendChild(li)
-    }
+    //Criar um elemento para a tabela
+    var item = document.createElement('option')
+    item.text = `${N1} x ${i} = ${N1 * i}`
+    item.value = `Tab${i}`
+    //Adcionar elemento filho
+    Tab.appendChild(item)
+  }
 }
