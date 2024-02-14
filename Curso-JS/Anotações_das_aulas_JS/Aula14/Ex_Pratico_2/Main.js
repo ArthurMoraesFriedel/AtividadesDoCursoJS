@@ -3,7 +3,7 @@ function Tabuada(){
   // Obter o número digitado pelo usuário
     var N1 = Number(window.document.getElementById("N1").value)
 
-  // Referência à lista no HTML e limpar a lista
+  // Referência à lista no HTML
     var Tab = document.getElementById('Tab')
 
   //Verificar se o valor digitado é valido
