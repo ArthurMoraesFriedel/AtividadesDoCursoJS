@@ -1,4 +1,4 @@
-# Curso-de-JS-HTML-CSS
+# Curso-de-JS
 ---
 Este repositório serve para armazenar as atividades e aprendizados realizadas no curso de **Javascript**  do Gustavo Guanabara.
 
