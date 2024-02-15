@@ -1,18 +1,17 @@
 //Criar Tabela
  var Tabela = []
+//Obtendo a referência
+var resultado = window.document.getElementById('resultado')
+//RefeRência à lista
+var Tab = document.getElementById('Tab')
+//Obter número digitado
+var inputN = window.document.getElementById('N')
 
-
+//Validar se o número é valido
 function ValidarDados(){
-    //Obter número digitado
-    var N = parseInt(window.document.getElementById('N').value)
 
-    //Obtendo a referência
-    var resultado = window.document.getElementById('resultado')
+    N = Number(inputN.value)
 
-    //RefeRência à lista
-    var Tab = document.getElementById('Tab')
-
-    //Validar se o número é valido
     if(N === '' || isNaN(N)){
         window.alert("Verifique o valor e tente novamente")
 
@@ -25,6 +24,10 @@ function ValidarDados(){
     }else{
        window.alert("Este número já consta na lista")
     }
+
+    //Limpar valor e definir foco
+    inputN.value = ''
+    inputN.focus()
 }
 
 function AdicionarTabela(N, Tab, resultado){
@@ -42,6 +45,7 @@ function AdicionarTabela(N, Tab, resultado){
 
     console.log(Tabela)
 
+    //Apaga resultado anterior ao adicionar novos valores
     resultado.innerHTML = ''
     return
 }
@@ -50,7 +54,7 @@ function Finalizar(){
 
     //Validar se a tabela esta preenchida
     if(Tabela.length == ''){
-        window.alert("Verifique o valor e tente novamente")
+        window.alert("Adicione Valores antes de finalizar")
 
     }else{
         Calcular(resultado)
