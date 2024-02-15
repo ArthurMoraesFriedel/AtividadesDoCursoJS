@@ -1,12 +1,3 @@
-/*
-//Limpar conteúdo
-    Tab.innerHTML = ''
-
-
-
-*/
-
-
 //Criar Tabela
  var Tabela = []
 
@@ -14,6 +5,9 @@
 function ValidarDados(){
     //Obter número digitado
     var N = parseInt(window.document.getElementById('N').value)
+
+    //Obtendo a referência
+    var resultado = window.document.getElementById('resultado')
 
     //RefeRência à lista
     var Tab = document.getElementById('Tab')
@@ -26,14 +20,14 @@ function ValidarDados(){
         window.alert("Apenas valores entre 1 e 100 são válidos")
 
     }else if(!Tabela.includes(N)){
-        AdicionarTabela(N, Tab)
+        AdicionarTabela(N, Tab, resultado)
 
     }else{
-       window.alert("Este número já consta na tabela")
+       window.alert("Este número já consta na lista")
     }
 }
 
-function AdicionarTabela(N, Tab){
+function AdicionarTabela(N, Tab, resultado){
 
     //Criar um elemento para a tabela
     var item = document.createElement('option')
@@ -47,12 +41,12 @@ function AdicionarTabela(N, Tab){
     Tabela.push(N)
 
     console.log(Tabela)
+
+    resultado.innerHTML = ''
     return
 }
 
 function Finalizar(){
-    //Obtendo a referência
-    var resultado = window.document.getElementById('resultado')
 
     //Validar se a tabela esta preenchida
     if(Tabela.length == ''){
